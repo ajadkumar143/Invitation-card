@@ -87,7 +87,7 @@ export const invitationData = [
     title: 'Vidai Ceremony',
     subtitle: 'A Tender Farewell Filled with Love, Emotions, and Blessings',
     date: '15/06/2026',
-    time: '06:30 PM',
+    time: '06:30 AM',
     address: 'Dhaurahara, Varanasi 221104',
     message: 'With moist eyes and heartfelt blessings, we gather to bid a beautiful farewell and pray for a joyful new beginning filled with love, happiness, and togetherness.',
     extraMessage: 'Your presence and blessings will make this emotional moment even more special and memorable.',
