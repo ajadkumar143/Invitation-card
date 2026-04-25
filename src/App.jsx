@@ -246,7 +246,7 @@ const InnerBorderDecorations = ({ theme }) => {
 };
 
 const AnimatedMobileFrame = ({ children, currentTheme }) => (
-  <div className="relative mx-auto h-[100dvh] w-full sm:h-[850px] sm:w-[420px] flex items-center justify-center transition-all duration-700">
+  <div className="relative mx-auto h-[100dvh] w-full sm:h-[750px] sm:w-[420px] flex items-center justify-center transition-all duration-700">
     <div className={`absolute inset-0 bg-gradient-to-br from-[#D4AF37]/10 to-transparent blur-3xl opacity-30 pointer-events-none transition-colors duration-1000`}></div>
 
     <div className="relative h-full w-full border-gray-900 bg-black sm:border-[16px] rounded-none sm:rounded-[2.5rem] shadow-[0_20px_60px_rgba(0,0,0,0.8)] overflow-hidden flex flex-col z-20">

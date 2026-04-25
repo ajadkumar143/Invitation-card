@@ -8,7 +8,7 @@ const WelcomePage = () => {
       <div className="absolute inset-4 border border-gold-500/40 rounded-2xl pointer-events-none"></div>
       <div className="absolute inset-5 border border-gold-500/20 rounded-xl pointer-events-none"></div>
 
-      <motion.div 
+      <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -23,7 +23,7 @@ const WelcomePage = () => {
         <div className="w-12 h-0.5 bg-gold-500 mb-6"></div>
 
         <p className="text-neutral-700 text-sm md:text-base leading-relaxed max-w-[280px]">
-          We seek the blessings of the Almighty and our elders as we embark on this beautiful journey of love and togetherness. 
+          We seek the blessings of the Almighty and our elders as we embark on this beautiful journey of love and togetherness.
           Please join us to make our celebrations complete with your presence.
         </p>
       </motion.div>
