@@ -3,12 +3,15 @@ import { motion } from 'framer-motion';
 
 const WeddingPage = () => {
   return (
-    <div className="w-full h-full relative bg-red-950 flex flex-col items-center justify-center overflow-hidden">
-      {/* Decorative floral corners using CSS and pseudo-elements or text */}
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-800 to-transparent"></div>
-      
+    <div className="w-full h-full relative bg-gradient-to-b from-[#2C0505] via-[#600000] to-[#180202] flex flex-col items-center justify-center overflow-hidden text-[#FFD700]">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-8 left-6 w-24 h-24 text-[#D4AF37]/30 text-6xl">❀</div>
+        <div className="absolute bottom-10 right-6 w-28 h-28 text-[#FFDE7D]/20 text-7xl">❁</div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,215,0,0.14),transparent_24%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.05),transparent_20%)]" />
+      </div>
+
       {/* Top Floral/Mandap garland approximation */}
-      <div className="absolute top-0 w-full flex justify-center opacity-80 mt-4 text-gold-500 text-2xl tracking-widest">
+      <div className="absolute top-4 w-full flex justify-center opacity-80 text-[#FFD700] text-2xl tracking-widest">
         ❁ ❀ ❁ ❀ ❁ ❀ ❁ ❀ ❁
       </div>
 

@@ -532,6 +532,9 @@ const PremiumWeddingContent = ({ data }) => {
       variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
       className="z-20 flex-1 flex flex-col items-center justify-center text-center w-full max-w-[340px] mx-auto px-2 py-2 relative"
     >
+      <FloralArch color="text-[#FFD700]" />
+      <AnimatedBorder borderColor="text-[#FFD700]" />
+
       {/* Badge */}
       <motion.div variants={fadeUp}>
         <div className="px-4 py-1.5 rounded-full border border-[#FFD700]/50 text-[#FFD700] text-[10px] uppercase tracking-[0.25em] font-bold mb-2 bg-white/10 backdrop-blur-sm shadow-sm">
@@ -874,11 +877,10 @@ export const EventPage = ({ data }) => {
     >
       {/* === Decorative Background Image for Haldi / Mehndi / Wedding === */}
       {(type === 'haldi' || type === 'mehndi' || type === 'wedding') && (() => {
-        // Specific background images per ceremony
+        // Specific background images per ceremony (only Haldi and Mehndi use photo backgrounds)
         const bgImageMap = {
           haldi: '/images/haldi-bg.png',
           mehndi: '/images/mehndi.png',
-          wedding: '/images/Wedding.png',
         };
 
         // Theme-specific overlay gradients
@@ -897,17 +899,25 @@ export const EventPage = ({ data }) => {
 
         return (
           <>
-            {/* Layer 1: Background image */}
-            <div
-              className="absolute inset-0 w-full h-full pointer-events-none z-0"
-              style={{
-                backgroundImage: `url('${bgImageMap[type]}')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                opacity: 0.35
-              }}
-            ></div>
+            {/* Layer 1: Background image for Haldi/Mehndi only */}
+            {(type === 'haldi' || type === 'mehndi') && (
+              <div
+                className="absolute inset-0 w-full h-full pointer-events-none z-0"
+                style={{
+                  backgroundImage: `url('${bgImageMap[type]}')`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                  opacity: 0.35
+                }}
+              ></div>
+            )}
+
+            {/* Wedding page decorative glow with no photo background */}
+            {type === 'wedding' && (
+              <div className="absolute inset-0 pointer-events-none z-0 bg-[radial-gradient(circle_at_top,_rgba(255,215,0,0.18),transparent_24%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.08),transparent_20%)]" />
+            )}
+
             {/* Layer 2: Theme-colored semi-transparent overlay */}
             <div
               className="absolute inset-0 pointer-events-none z-[1]"
