@@ -30,9 +30,9 @@ const HaldiVisual = () => (
     </div>
     {/* Central Glowing Motif without Plate */}
     <div className="z-20 mt-8 relative">
-       <div className="w-16 h-16 bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-full shadow-[0_0_40px_#FFA500] flex items-center justify-center border-4 border-[#FFA500]/50 backdrop-blur-sm">
-          <span className="text-3xl filter hue-rotate-[-10deg] animate-pulse">🌞</span>
-       </div>
+      <div className="w-16 h-16 bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-full shadow-[0_0_40px_#FFA500] flex items-center justify-center border-4 border-[#FFA500]/50 backdrop-blur-sm">
+        <span className="text-3xl filter hue-rotate-[-10deg] animate-pulse">🌞</span>
+      </div>
     </div>
   </motion.div>
 );
@@ -40,35 +40,35 @@ const HaldiVisual = () => (
 const WeddingVisual = () => (
   <motion.div variants={textReveal} className="flex justify-center items-center my-8 opacity-100 drop-shadow-2xl relative w-full h-40">
     <div className="absolute inset-0 bg-[#800000] blur-[50px] opacity-40 rounded-full"></div>
-    
+
     {/* Golden Glow & Ornate Decor */}
     <div className="absolute inset-0 flex justify-center items-center opacity-40">
-       <div className="w-32 h-32 border-2 border-dashed border-[#FFD700] rounded-full animate-spin-slow"></div>
-       <div className="absolute w-28 h-28 border border-[#D4AF37] rounded-full"></div>
+      <div className="w-32 h-32 border-2 border-dashed border-[#FFD700] rounded-full animate-spin-slow"></div>
+      <div className="absolute w-28 h-28 border border-[#D4AF37] rounded-full"></div>
     </div>
 
     {/* Premium Varmalas (2 interlocking loops) */}
     <div className="relative flex justify-center items-start gap-0 z-10 mt-4">
       {/* Left Royal Mala */}
       <div className="w-16 h-28 border-x-4 border-b-8 border-double border-[#B22222] rounded-b-full relative drop-shadow-[0_15px_15px_rgba(0,0,0,0.7)]">
-         <div className="absolute -inset-1 border border-dotted border-[#FFD700]/80 rounded-b-full"></div>
-         <span className="absolute -left-4 top-2 text-2xl">🌹</span>
-         <span className="absolute -right-4 top-8 text-xl">💮</span>
-         <span className="absolute -left-4 top-14 text-2xl">🌹</span>
-         <span className="absolute -right-4 top-20 text-xl">💮</span>
-         <span className="absolute -left-3 bottom-0 text-xl">✨</span>
-         <span className="absolute bottom-[-22px] left-[15%] text-4xl filter drop-shadow-[0_5px_15px_rgba(255,0,0,0.8)] z-30">🏵️</span>
+        <div className="absolute -inset-1 border border-dotted border-[#FFD700]/80 rounded-b-full"></div>
+        <span className="absolute -left-4 top-2 text-2xl">🌹</span>
+        <span className="absolute -right-4 top-8 text-xl">💮</span>
+        <span className="absolute -left-4 top-14 text-2xl">🌹</span>
+        <span className="absolute -right-4 top-20 text-xl">💮</span>
+        <span className="absolute -left-3 bottom-0 text-xl">✨</span>
+        <span className="absolute bottom-[-22px] left-[15%] text-4xl filter drop-shadow-[0_5px_15px_rgba(255,0,0,0.8)] z-30">🏵️</span>
       </div>
 
       {/* Right Royal Mala */}
       <div className="w-16 h-28 border-x-4 border-b-8 border-double border-[#8B0000] rounded-b-full relative drop-shadow-[0_15px_15px_rgba(0,0,0,0.7)] -ml-4 mt-6 z-20">
-         <div className="absolute -inset-1 border border-dotted border-[#FFD700]/80 rounded-b-full"></div>
-         <span className="absolute -right-4 top-2 text-2xl">🌹</span>
-         <span className="absolute -left-4 top-8 text-xl">💮</span>
-         <span className="absolute -right-4 top-14 text-2xl">🌹</span>
-         <span className="absolute -left-4 top-20 text-xl">💮</span>
-         <span className="absolute -right-3 bottom-0 text-xl">✨</span>
-         <span className="absolute bottom-[-22px] left-[15%] text-4xl filter drop-shadow-[0_5px_15px_rgba(255,0,0,0.8)] z-30">🏵️</span>
+        <div className="absolute -inset-1 border border-dotted border-[#FFD700]/80 rounded-b-full"></div>
+        <span className="absolute -right-4 top-2 text-2xl">🌹</span>
+        <span className="absolute -left-4 top-8 text-xl">💮</span>
+        <span className="absolute -right-4 top-14 text-2xl">🌹</span>
+        <span className="absolute -left-4 top-20 text-xl">💮</span>
+        <span className="absolute -right-3 bottom-0 text-xl">✨</span>
+        <span className="absolute bottom-[-22px] left-[15%] text-4xl filter drop-shadow-[0_5px_15px_rgba(255,0,0,0.8)] z-30">🏵️</span>
       </div>
     </div>
   </motion.div>
@@ -179,7 +179,7 @@ const PremiumInvitationContent = ({ data }) => {
       className="z-20 flex-1 flex flex-col items-center text-center w-full max-w-[340px] mx-auto pt-10 pb-8 px-4 relative"
     >
       {/* Floral Corners */}
-      {['top-1 left-1','top-1 right-1 scale-x-[-1]','bottom-1 left-1 scale-y-[-1]','bottom-1 right-1 scale-x-[-1] scale-y-[-1]'].map((pos, i) => (
+      {['top-1 left-1', 'top-1 right-1 scale-x-[-1]', 'bottom-1 left-1 scale-y-[-1]', 'bottom-1 right-1 scale-x-[-1] scale-y-[-1]'].map((pos, i) => (
         <motion.span
           key={i}
           className={`absolute ${pos} text-2xl z-[5] opacity-60 pointer-events-none`}
@@ -203,7 +203,7 @@ const PremiumInvitationContent = ({ data }) => {
         <span className="text-[#B8860B] uppercase tracking-[0.25em] text-[9px] font-bold mb-1 opacity-80">
           Auspicious Beginning
         </span>
-        <h1 className="font-serif text-[2.4rem] sm:text-5xl text-[#800000] drop-shadow-md tracking-tight leading-[1.1]">
+        <h1 className="font-serif text-[2rem] sm:text-4xl text-[#800000] drop-shadow-md tracking-tight leading-[1.1]">
           {data.title}
         </h1>
       </motion.div>
@@ -217,51 +217,51 @@ const PremiumInvitationContent = ({ data }) => {
       </motion.p>
 
       {/* Bride & Groom Names */}
-      <motion.div variants={fadeUp} className="w-full my-3 py-3 relative">
+      <motion.div variants={fadeUp} className="w-full my-3 py-3 relative z-30">
         <div className="absolute inset-x-6 top-0 h-[1.5px] bg-gradient-to-r from-transparent via-[#D4AF37]/70 to-transparent" />
         <div className="absolute inset-x-6 bottom-0 h-[1.5px] bg-gradient-to-r from-transparent via-[#D4AF37]/70 to-transparent" />
 
         <motion.h2
-          className="font-serif text-[1.75rem] sm:text-4xl font-extrabold text-[#800000] drop-shadow-lg tracking-wide"
-          animate={{ textShadow: ['0 0 0px transparent','0 0 20px rgba(212,175,55,0.3)','0 0 0px transparent'] }}
+          className="font-serif text-2xl sm:text-3xl font-extrabold text-[#800000] drop-shadow-lg tracking-wide"
+          animate={{ textShadow: ['0 0 0px transparent', '0 0 20px rgba(212,175,55,0.3)', '0 0 0px transparent'] }}
           transition={{ duration: 3, repeat: Infinity }}
         >{bride}</motion.h2>
 
-        <div className="flex items-center justify-center gap-3 my-1">
+        <div className="flex items-center justify-center gap-3 my-0.5">
           <div className="h-px w-14 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
-          <span className="font-serif italic text-lg text-[#D4AF37] drop-shadow-sm">weds</span>
+          <span className="font-serif italic text-base text-[#D4AF37] drop-shadow-sm">weds</span>
           <div className="h-px w-14 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
         </div>
 
         <motion.h2
-          className="font-serif text-[1.75rem] sm:text-4xl font-extrabold text-[#800000] drop-shadow-lg tracking-wide"
-          animate={{ textShadow: ['0 0 0px transparent','0 0 20px rgba(212,175,55,0.3)','0 0 0px transparent'] }}
+          className="font-serif text-2xl sm:text-3xl font-extrabold text-[#800000] drop-shadow-lg tracking-wide"
+          animate={{ textShadow: ['0 0 0px transparent', '0 0 20px rgba(212,175,55,0.3)', '0 0 0px transparent'] }}
           transition={{ duration: 3, repeat: Infinity, delay: 1.5 }}
         >{groom}</motion.h2>
       </motion.div>
 
-      {/* Invitation Message */}
-      <motion.p variants={fadeUp} className="text-[11px] sm:text-xs text-[#5C4033] leading-relaxed px-2 max-w-[300px] font-medium">
-        {message}
-      </motion.p>
-
-      {/* Date, Time, Venue Cards */}
-      <motion.div variants={fadeUp} className="flex flex-col gap-2.5 w-full mt-3">
-        <div className="flex justify-center gap-3">
-          <div className="flex items-center gap-2 bg-white/50 backdrop-blur-sm px-3.5 py-2 rounded-xl border border-[#D4AF37]/40 shadow-[0_2px_12px_rgba(212,175,55,0.12)]">
-            <Calendar size={14} className="text-[#B8860B]" />
-            <span className="text-xs sm:text-sm font-bold text-[#5C4033]">{date}</span>
+      {/* Date, Time, Venue Cards (Centered prominently) */}
+      <motion.div variants={fadeUp} className="flex flex-col gap-2 w-full my-2 z-30">
+        <div className="flex justify-center gap-2">
+          <div className="flex items-center gap-1.5 bg-gradient-to-br from-[#FFF8DC] to-[#FDF5E6] backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-[#D4AF37] shadow-[0_4px_10px_rgba(212,175,55,0.2)]">
+            <Calendar size={14} className="text-[#800000]" />
+            <span className="text-xs font-extrabold text-[#800000]">{date}</span>
           </div>
-          <div className="flex items-center gap-2 bg-white/50 backdrop-blur-sm px-3.5 py-2 rounded-xl border border-[#D4AF37]/40 shadow-[0_2px_12px_rgba(212,175,55,0.12)]">
-            <Clock size={14} className="text-[#B8860B]" />
-            <span className="text-xs sm:text-sm font-bold text-[#5C4033]">{time}</span>
+          <div className="flex items-center gap-1.5 bg-gradient-to-br from-[#FFF8DC] to-[#FDF5E6] backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-[#D4AF37] shadow-[0_4px_10px_rgba(212,175,55,0.2)]">
+            <Clock size={14} className="text-[#800000]" />
+            <span className="text-xs font-extrabold text-[#800000]">{time}</span>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-2 bg-white/50 backdrop-blur-sm px-4 py-2 rounded-xl border border-[#D4AF37]/40 shadow-[0_2px_12px_rgba(212,175,55,0.12)] mx-auto">
-            <MapPin size={14} className="text-[#B8860B] shrink-0" />
-            <span className="text-xs sm:text-sm font-bold text-[#800000]">{address}</span>
+        <div className="flex items-center justify-center gap-1.5 bg-gradient-to-br from-[#FFF8DC] to-[#FDF5E6] backdrop-blur-md px-4 py-1.5 rounded-xl border border-[#D4AF37] shadow-[0_4px_10px_rgba(212,175,55,0.2)] mx-auto w-[85%]">
+          <MapPin size={14} className="text-[#800000] shrink-0" />
+          <span className="text-xs font-extrabold text-[#800000] text-center leading-tight">{address}</span>
         </div>
       </motion.div>
+
+      {/* Invitation Message */}
+      <motion.p variants={fadeUp} className="text-[11px] sm:text-xs text-[#5C4033] leading-relaxed px-2 max-w-[300px] font-medium my-2">
+        {message}
+      </motion.p>
 
       {/* Bottom Blessing */}
       <motion.div variants={fadeUp} className="flex flex-col items-center mt-3">
@@ -412,7 +412,7 @@ const PremiumMehndiContent = ({ data }) => {
         initial="hidden"
         animate="visible"
         variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
-        className="z-20 flex-1 flex flex-col items-center text-center w-full max-w-[340px] mx-auto pt-8 pb-6 px-3 relative"
+        className="z-20 flex-1 flex flex-col items-center text-center w-full max-w-[340px] mx-auto pt-4 pb-4 px-2 relative"
       >
         {/* Floral Corners */}
         {['top-0 left-0', 'top-0 right-0 scale-x-[-1]', 'bottom-0 left-0 scale-y-[-1]', 'bottom-0 right-0 scale-x-[-1] scale-y-[-1]'].map((pos, i) => (
@@ -464,20 +464,20 @@ const PremiumMehndiContent = ({ data }) => {
         </motion.div>
 
         {/* Date, Time, Address Cards */}
-        <motion.div variants={fadeUp} className="flex flex-col gap-2 w-full mt-1">
-          <div className="flex justify-center gap-3">
-            <div className="flex items-center gap-2 bg-white/45 backdrop-blur-sm px-3.5 py-2 rounded-xl border border-green-600/25 shadow-[0_2px_12px_rgba(34,139,34,0.1)]">
-              <Calendar size={13} className="text-green-700" />
-              <span className="text-xs sm:text-sm font-bold text-[#004B23]">{date}</span>
+        <motion.div variants={fadeUp} className="flex flex-col gap-2 w-full mt-1.5 z-30">
+          <div className="flex justify-center gap-2">
+            <div className="flex items-center gap-1.5 bg-gradient-to-br from-[#E8F5E9] to-[#C8E6C9] backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-[#2E8B57] shadow-[0_4px_10px_rgba(0,75,35,0.2)]">
+              <Calendar size={14} className="text-[#004B23]" />
+              <span className="text-xs font-extrabold text-[#004B23]">{date}</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/45 backdrop-blur-sm px-3.5 py-2 rounded-xl border border-green-600/25 shadow-[0_2px_12px_rgba(34,139,34,0.1)]">
-              <Clock size={13} className="text-green-700" />
-              <span className="text-xs sm:text-sm font-bold text-[#004B23]">{time}</span>
+            <div className="flex items-center gap-1.5 bg-gradient-to-br from-[#E8F5E9] to-[#C8E6C9] backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-[#2E8B57] shadow-[0_4px_10px_rgba(0,75,35,0.2)]">
+              <Clock size={14} className="text-[#004B23]" />
+              <span className="text-xs font-extrabold text-[#004B23]">{time}</span>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-2 bg-white/45 backdrop-blur-sm px-4 py-2 rounded-xl border border-green-600/25 shadow-[0_2px_12px_rgba(34,139,34,0.1)] mx-auto">
-            <MapPin size={14} className="text-green-700 shrink-0" />
-            <span className="text-xs sm:text-sm font-bold text-[#004B23]">{address}</span>
+          <div className="flex items-center justify-center gap-1.5 bg-gradient-to-br from-[#E8F5E9] to-[#C8E6C9] backdrop-blur-md px-4 py-1.5 rounded-xl border border-[#2E8B57] shadow-[0_4px_10px_rgba(0,75,35,0.2)] mx-auto w-[85%]">
+            <MapPin size={14} className="text-[#004B23] shrink-0" />
+            <span className="text-xs font-extrabold text-[#004B23] text-center leading-tight">{address}</span>
           </div>
         </motion.div>
 
@@ -530,7 +530,7 @@ const PremiumWeddingContent = ({ data }) => {
       initial="hidden"
       animate="visible"
       variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
-      className="z-20 flex-1 flex flex-col items-center justify-center text-center w-full max-w-[340px] mx-auto px-3 py-4 relative"
+      className="z-20 flex-1 flex flex-col items-center justify-center text-center w-full max-w-[340px] mx-auto px-2 py-2 relative"
     >
       {/* Badge */}
       <motion.div variants={fadeUp}>
@@ -563,7 +563,7 @@ const PremiumWeddingContent = ({ data }) => {
       <motion.div variants={fadeUp} className="flex justify-center items-center my-2 relative w-full h-28">
         {/* Warm glow behind malas */}
         <div className="absolute inset-0 bg-[#800000] blur-[40px] opacity-25 rounded-full"></div>
-        
+
         {/* Golden shimmer particles */}
         {Array.from({ length: 8 }).map((_, i) => (
           <motion.div
@@ -577,7 +577,7 @@ const PremiumWeddingContent = ({ data }) => {
 
         <div className="z-10 flex justify-center items-start relative">
           {/* Left Mala */}
-          <motion.div 
+          <motion.div
             className="relative"
             animate={{ rotate: [-1, 1, -1] }}
             transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
@@ -598,7 +598,7 @@ const PremiumWeddingContent = ({ data }) => {
           </motion.div>
 
           {/* Right Mala — offset and interlocking */}
-          <motion.div 
+          <motion.div
             className="relative -ml-3 mt-4 z-20"
             animate={{ rotate: [1, -1, 1] }}
             transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
@@ -645,20 +645,20 @@ const PremiumWeddingContent = ({ data }) => {
       </motion.div>
 
       {/* Date, Time, Address Cards */}
-      <motion.div variants={fadeUp} className="flex flex-col gap-2 w-full mt-2">
-        <div className="flex justify-center gap-3">
-          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3.5 py-2 rounded-xl border border-[#FFD700]/30 shadow-[0_2px_12px_rgba(255,215,0,0.1)]">
-            <Calendar size={13} className="text-[#FFD700]" />
-            <span className="text-xs sm:text-sm font-bold text-[#FFD700]">{date}</span>
+      <motion.div variants={fadeUp} className="flex flex-col gap-2 w-full mt-2 z-30">
+        <div className="flex justify-center gap-2">
+          <div className="flex items-center gap-1.5 bg-gradient-to-br from-[#800000] to-[#4A0E0E] backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-[#FFD700] shadow-[0_4px_10px_rgba(255,215,0,0.25)]">
+            <Calendar size={14} className="text-[#FFD700]" />
+            <span className="text-xs font-extrabold text-[#FFD700]">{date}</span>
           </div>
-          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3.5 py-2 rounded-xl border border-[#FFD700]/30 shadow-[0_2px_12px_rgba(255,215,0,0.1)]">
-            <Clock size={13} className="text-[#FFD700]" />
-            <span className="text-xs sm:text-sm font-bold text-[#FFD700]">{time}</span>
+          <div className="flex items-center gap-1.5 bg-gradient-to-br from-[#800000] to-[#4A0E0E] backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-[#FFD700] shadow-[0_4px_10px_rgba(255,215,0,0.25)]">
+            <Clock size={14} className="text-[#FFD700]" />
+            <span className="text-xs font-extrabold text-[#FFD700]">{time}</span>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-xl border border-[#FFD700]/30 shadow-[0_2px_12px_rgba(255,215,0,0.1)] mx-auto">
+        <div className="flex items-center justify-center gap-1.5 bg-gradient-to-br from-[#800000] to-[#4A0E0E] backdrop-blur-md px-4 py-1.5 rounded-xl border border-[#FFD700] shadow-[0_4px_10px_rgba(255,215,0,0.25)] mx-auto w-[85%]">
           <MapPin size={14} className="text-[#FFD700] shrink-0" />
-          <span className="text-xs sm:text-sm font-bold text-[#FFD700]">{address}</span>
+          <span className="text-xs font-extrabold text-[#FFD700] text-center leading-tight">{address}</span>
         </div>
       </motion.div>
 
@@ -818,20 +818,20 @@ const PremiumVidaiContent = ({ data }) => {
         </motion.div>
 
         {/* Date, Time, Address */}
-        <motion.div variants={fadeUp} className="flex flex-col gap-2 w-full mt-2">
-          <div className="flex justify-center gap-3">
-            <div className="flex items-center gap-2 bg-white/40 backdrop-blur-sm px-3.5 py-2 rounded-xl border border-[#FF69B4]/25 shadow-[0_2px_12px_rgba(219,112,147,0.1)]">
-              <Calendar size={13} className="text-[#C71585]" />
-              <span className="text-xs sm:text-sm font-bold text-[#800040]">{date}</span>
+        <motion.div variants={fadeUp} className="flex flex-col gap-2 w-full mt-1.5 z-30">
+          <div className="flex justify-center gap-2">
+            <div className="flex items-center gap-1.5 bg-gradient-to-br from-[#FFE4E1] to-[#FFB6C1] backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-[#C71585] shadow-[0_4px_10px_rgba(199,21,133,0.2)]">
+              <Calendar size={14} className="text-[#8B0A50]" />
+              <span className="text-xs font-extrabold text-[#8B0A50]">{date}</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/40 backdrop-blur-sm px-3.5 py-2 rounded-xl border border-[#FF69B4]/25 shadow-[0_2px_12px_rgba(219,112,147,0.1)]">
-              <Clock size={13} className="text-[#C71585]" />
-              <span className="text-xs sm:text-sm font-bold text-[#800040]">{time}</span>
+            <div className="flex items-center gap-1.5 bg-gradient-to-br from-[#FFE4E1] to-[#FFB6C1] backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-[#C71585] shadow-[0_4px_10px_rgba(199,21,133,0.2)]">
+              <Clock size={14} className="text-[#8B0A50]" />
+              <span className="text-xs font-extrabold text-[#8B0A50]">{time}</span>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-2 bg-white/40 backdrop-blur-sm px-4 py-2 rounded-xl border border-[#FF69B4]/25 shadow-[0_2px_12px_rgba(219,112,147,0.1)] mx-auto">
-            <MapPin size={14} className="text-[#C71585] shrink-0" />
-            <span className="text-xs sm:text-sm font-bold text-[#800040]">{address}</span>
+          <div className="flex items-center justify-center gap-1.5 bg-gradient-to-br from-[#FFE4E1] to-[#FFB6C1] backdrop-blur-md px-4 py-1.5 rounded-xl border border-[#C71585] shadow-[0_4px_10px_rgba(199,21,133,0.2)] mx-auto w-[85%]">
+            <MapPin size={14} className="text-[#8B0A50] shrink-0" />
+            <span className="text-xs font-extrabold text-[#8B0A50] text-center leading-tight">{address}</span>
           </div>
         </motion.div>
 
@@ -864,7 +864,7 @@ export const EventPage = ({ data }) => {
   const { type, badgeText, title, subtitle, message, extraMessage, date, time, address, bride, groom, theme } = data;
 
   return (
-    <motion.div 
+    <motion.div
       key={data.id}
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
@@ -898,7 +898,7 @@ export const EventPage = ({ data }) => {
         return (
           <>
             {/* Layer 1: Background image */}
-            <div 
+            <div
               className="absolute inset-0 w-full h-full pointer-events-none z-0"
               style={{
                 backgroundImage: `url('${bgImageMap[type]}')`,
@@ -909,7 +909,7 @@ export const EventPage = ({ data }) => {
               }}
             ></div>
             {/* Layer 2: Theme-colored semi-transparent overlay */}
-            <div 
+            <div
               className="absolute inset-0 pointer-events-none z-[1]"
               style={{
                 background: overlayMap[type],
@@ -917,7 +917,7 @@ export const EventPage = ({ data }) => {
               }}
             ></div>
             {/* Layer 3: Soft gradient for text readability */}
-            <div 
+            <div
               className="absolute inset-0 pointer-events-none z-[2]"
               style={{
                 background: readabilityMap[type]
@@ -954,7 +954,7 @@ export const EventPage = ({ data }) => {
 
       {/* Generic layout for all other page types */}
       {type !== 'invitation' && type !== 'mehndi' && type !== 'wedding' && type !== 'vidai' && (
-        <motion.div 
+        <motion.div
           initial="hidden"
           animate="visible"
           variants={{ visible: { transition: { staggerChildren: 0.2 } } }}
@@ -964,11 +964,11 @@ export const EventPage = ({ data }) => {
             <div className={`px-4 py-1.5 rounded-full border ${theme.borderColor} ${theme.textAccent} text-[10px] sm:text-xs uppercase tracking-[0.25em] font-bold mb-4 bg-white/20 backdrop-blur-sm shadow-sm`}>
               {badgeText}
             </div>
-            
+
             <h1 className={`font-serif text-4xl sm:text-5xl ${theme.textPrimary} drop-shadow-md tracking-tight leading-tight mb-3`}>
               {title}
             </h1>
-            
+
             {subtitle && (
               <p className={`text-sm font-medium italic ${theme.textSecondary} max-w-[280px]`}>
                 "{subtitle}"
@@ -978,7 +978,7 @@ export const EventPage = ({ data }) => {
 
           <motion.div variants={textReveal} className="w-full flex flex-col items-center my-2">
             <SymbolicVisual type={type} />
-            
+
             {message && (
               <p className={`text-sm sm:text-base font-semibold leading-relaxed ${theme.textPrimary} px-2 mt-2`}>
                 {message}
@@ -998,26 +998,26 @@ export const EventPage = ({ data }) => {
             )}
 
             {(date || time || address) && (
-              <div className={`flex flex-col gap-3 font-bold text-xs sm:text-sm ${theme.textSecondary} w-full mt-4`}>
-                <div className="flex justify-center items-center gap-4">
+              <div className={`flex flex-col gap-2 w-full mt-2 z-30`}>
+                <div className="flex justify-center items-center gap-2">
                   {date && (
-                    <div className="flex items-center gap-2 bg-white/40 px-3 py-1.5 rounded-lg border border-white/30 shadow-sm backdrop-blur-md">
-                      <Calendar size={14} className={theme.textAccent} />
-                      <span>{date}</span>
+                    <div className={`flex items-center gap-1.5 ${type === 'haldi' ? 'bg-gradient-to-br from-[#FFFACD] to-[#FFD700]/30' : 'bg-gradient-to-br from-[#FFFDF2] to-[#FDF5E6]'} px-3.5 py-1.5 rounded-xl border ${theme.borderColor} shadow-[0_4px_10px_rgba(0,0,0,0.15)] backdrop-blur-md`}>
+                      <Calendar size={14} className={theme.textPrimary} />
+                      <span className={`text-xs font-extrabold ${theme.textPrimary}`}>{date}</span>
                     </div>
                   )}
                   {time && (
-                    <div className="flex items-center gap-2 bg-white/40 px-3 py-1.5 rounded-lg border border-white/30 shadow-sm backdrop-blur-md">
-                      <Clock size={14} className={theme.textAccent} />
-                      <span>{time}</span>
+                    <div className={`flex items-center gap-1.5 ${type === 'haldi' ? 'bg-gradient-to-br from-[#FFFACD] to-[#FFD700]/30' : 'bg-gradient-to-br from-[#FFFDF2] to-[#FDF5E6]'} px-3.5 py-1.5 rounded-xl border ${theme.borderColor} shadow-[0_4px_10px_rgba(0,0,0,0.15)] backdrop-blur-md`}>
+                      <Clock size={14} className={theme.textPrimary} />
+                      <span className={`text-xs font-extrabold ${theme.textPrimary}`}>{time}</span>
                     </div>
                   )}
                 </div>
-                
+
                 {address && (
-                  <div className="flex items-center justify-center gap-2 mt-2 bg-white/40 px-4 py-2 rounded-xl border border-white/30 shadow-sm backdrop-blur-md">
-                    <MapPin size={16} className={`shrink-0 ${theme.textAccent}`} />
-                    <span className={`text-left leading-snug ${theme.textPrimary}`}>{address}</span>
+                  <div className={`flex items-center justify-center gap-1.5 mt-1 ${type === 'haldi' ? 'bg-gradient-to-br from-[#FFFACD] to-[#FFD700]/30' : 'bg-gradient-to-br from-[#FFFDF2] to-[#FDF5E6]'} px-4 py-1.5 rounded-xl border ${theme.borderColor} shadow-[0_4px_10px_rgba(0,0,0,0.15)] backdrop-blur-md mx-auto w-[85%]`}>
+                    <MapPin size={14} className={`shrink-0 ${theme.textPrimary}`} />
+                    <span className={`text-xs font-extrabold text-center leading-tight ${theme.textPrimary}`}>{address}</span>
                   </div>
                 )}
               </div>
