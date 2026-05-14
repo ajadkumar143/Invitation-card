@@ -860,6 +860,95 @@ const PremiumVidaiContent = ({ data }) => {
   );
 };
 
+const PremiumThankYouContent = ({ data }) => {
+  const { title, subtitle, message, extraMessage, theme } = data;
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+  };
+
+  return (
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+      className="z-20 flex-1 flex flex-col items-center justify-center text-center w-full max-w-[340px] mx-auto px-4 py-6 relative"
+    >
+      {/* Title */}
+      <motion.div variants={fadeUp}>
+        <h1 className={`font-serif text-4xl sm:text-5xl ${theme.textPrimary} drop-shadow-md tracking-tight leading-tight mb-2`}>
+          {title}
+        </h1>
+      </motion.div>
+
+      {/* Subtitle */}
+      <motion.div variants={fadeUp} className="mb-4">
+        <p className={`text-sm font-medium italic ${theme.textSecondary} max-w-[280px]`}>
+          "{subtitle}"
+        </p>
+      </motion.div>
+
+      {/* Main Message */}
+      <motion.div variants={fadeUp} className="mb-6">
+        <p className={`text-sm sm:text-base font-semibold leading-relaxed ${theme.textPrimary} px-2`}>
+          {message}
+        </p>
+      </motion.div>
+
+      {/* QR Code Section */}
+      <motion.div variants={fadeUp} className="flex flex-col items-center w-full">
+        <span className={`text-[10px] uppercase tracking-[0.2em] font-bold mb-3 ${theme.textAccent} opacity-80`}>
+          Scan for Venue Location
+        </span>
+
+        {/* QR Container */}
+        <div className="relative group">
+          {/* Animated Glow behind QR */}
+          <div className="absolute -inset-4 bg-[#D4AF37] blur-[25px] opacity-20 rounded-full animate-pulse group-hover:opacity-30 transition-opacity"></div>
+
+          <div className="relative p-3 bg-white/40 backdrop-blur-md rounded-2xl border-2 border-[#D4AF37]/40 shadow-[0_10px_30px_rgba(212,175,55,0.2)]">
+            {/* Frame Corners */}
+            <div className="absolute -top-1 -left-1 w-6 h-6 border-t-2 border-l-2 border-[#D4AF37] rounded-tl-lg"></div>
+            <div className="absolute -top-1 -right-1 w-6 h-6 border-t-2 border-r-2 border-[#D4AF37] rounded-tr-lg"></div>
+            <div className="absolute -bottom-1 -left-1 w-6 h-6 border-b-2 border-l-2 border-[#D4AF37] rounded-bl-lg"></div>
+            <div className="absolute -bottom-1 -right-1 w-6 h-6 border-b-2 border-r-2 border-[#D4AF37] rounded-br-lg"></div>
+
+            <img
+              src="/public/images/QR.png"
+              alt="Location QR Code"
+              className="w-32 h-32 sm:w-40 sm:h-40 rounded-lg object-contain bg-white p-1"
+            />
+          </div>
+        </div>
+
+        {/* Location Instruction */}
+        <motion.div
+          variants={fadeUp}
+          className="mt-6 px-4 py-3 bg-white/20 backdrop-blur-sm rounded-xl border border-[#D4AF37]/30 shadow-sm max-w-[280px]"
+        >
+          <p className={`text-[11px] sm:text-xs font-medium leading-relaxed ${theme.textPrimary}`}>
+            Venue ka pata aur exact location dekhne ke liye niche diya gaya QR code scan karein.
+          </p>
+        </motion.div>
+      </motion.div>
+
+      {/* Footer Section */}
+      <motion.div variants={fadeUp} className="flex flex-col items-center w-full mt-auto pt-6">
+        <Divider color={theme.textAccent} />
+        {extraMessage && (
+          <p className={`text-[10px] sm:text-xs font-semibold tracking-wide ${theme.textSecondary} px-4 mt-1 uppercase`}>
+            {extraMessage}
+          </p>
+        )}
+        <div className="flex gap-2 mt-1.5 text-base">
+          <span>🌸</span><span>✨</span><span>🌸</span>
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+};
+
 // --- MAIN EVENT PAGE COMPONENT ---
 
 
@@ -962,8 +1051,13 @@ export const EventPage = ({ data }) => {
         <PremiumVidaiContent data={data} />
       )}
 
+      {/* Premium thank you layout */}
+      {type === 'thankyou' && (
+        <PremiumThankYouContent data={data} />
+      )}
+
       {/* Generic layout for all other page types */}
-      {type !== 'invitation' && type !== 'mehndi' && type !== 'wedding' && type !== 'vidai' && (
+      {type !== 'invitation' && type !== 'mehndi' && type !== 'wedding' && type !== 'vidai' && type !== 'thankyou' && (
         <motion.div
           initial="hidden"
           animate="visible"
