@@ -915,7 +915,7 @@ const PremiumThankYouContent = ({ data }) => {
             <div className="absolute -bottom-1 -right-1 w-6 h-6 border-b-2 border-r-2 border-[#D4AF37] rounded-br-lg"></div>
 
             <img
-              src="/public/images/QR.png"
+              src="./../public/images/QR.png"
               alt="Location QR Code"
               className="w-32 h-32 sm:w-40 sm:h-40 rounded-lg object-contain bg-white p-1"
             />
