@@ -873,7 +873,7 @@ const PremiumThankYouContent = ({ data }) => {
       initial="hidden"
       animate="visible"
       variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
-      className="z-20 flex-1 flex flex-col items-center justify-center text-center w-full max-w-[340px] mx-auto px-4 py-6 relative"
+      className="z-20 flex-1 flex flex-col items-center justify-center text-center w-full max-w-[340px] mx-auto px-4 py-2 relative"
     >
       {/* Title */}
       <motion.div variants={fadeUp}>
@@ -896,52 +896,58 @@ const PremiumThankYouContent = ({ data }) => {
         </p>
       </motion.div>
 
-      {/* QR Code Section */}
-      <motion.div variants={fadeUp} className="flex flex-col items-center w-full">
-        <span className={`text-[10px] uppercase tracking-[0.2em] font-bold mb-3 ${theme.textAccent} opacity-80`}>
-          Scan for Venue Location
-        </span>
-
-        {/* QR Container */}
-        <div className="relative group">
-          {/* Animated Glow behind QR */}
-          <div className="absolute -inset-4 bg-[#D4AF37] blur-[25px] opacity-20 rounded-full animate-pulse group-hover:opacity-30 transition-opacity"></div>
-
-          <div className="relative p-3 bg-white/40 backdrop-blur-md rounded-2xl border-2 border-[#D4AF37]/40 shadow-[0_10px_30px_rgba(212,175,55,0.2)]">
-            {/* Frame Corners */}
-            <div className="absolute -top-1 -left-1 w-6 h-6 border-t-2 border-l-2 border-[#D4AF37] rounded-tl-lg"></div>
-            <div className="absolute -top-1 -right-1 w-6 h-6 border-t-2 border-r-2 border-[#D4AF37] rounded-tr-lg"></div>
-            <div className="absolute -bottom-1 -left-1 w-6 h-6 border-b-2 border-l-2 border-[#D4AF37] rounded-bl-lg"></div>
-            <div className="absolute -bottom-1 -right-1 w-6 h-6 border-b-2 border-r-2 border-[#D4AF37] rounded-br-lg"></div>
-
-            <img
-              src="./../public/images/QR.png"
-              alt="Location QR Code"
-              className="w-32 h-32 sm:w-40 sm:h-40 rounded-lg object-contain bg-white p-1"
-            />
-          </div>
-        </div>
-
-        {/* Location Instruction */}
-        <motion.div
-          variants={fadeUp}
-          className="mt-6 px-4 py-3 bg-white/20 backdrop-blur-sm rounded-xl border border-[#D4AF37]/30 shadow-sm max-w-[280px]"
+      <motion.div variants={fadeUp} className="flex flex-col items-center w-full mt-1">
+        {/* Venue Location Heading & Text ABOVE QR */}
+        <motion.div 
+          variants={fadeUp} 
+          className="mb-4 px-5 py-3 bg-white/40 backdrop-blur-md rounded-xl border border-[#D4AF37]/20 shadow-md max-w-[280px] text-center"
         >
-          <p className={`text-[11px] sm:text-xs font-medium leading-relaxed ${theme.textPrimary}`}>
-            Venue ka pata aur exact location dekhne ke liye niche diya gaya QR code scan karein.
+          <h3 className="text-[#800000] uppercase tracking-[0.2em] text-[11px] font-extrabold mb-1">
+            Scan for Venue Location
+          </h3>
+          <p className={`text-[11px] font-semibold leading-tight ${theme.textPrimary} opacity-90`}>
+            Scan the QR code below to view the exact venue address and location.
           </p>
         </motion.div>
+
+        {/* Premium QR Card */}
+        <div className="relative group">
+          {/* Ornate Glow Effect */}
+          <div className="absolute -inset-4 bg-[#D4AF37] blur-[25px] opacity-20 rounded-full animate-pulse"></div>
+          
+          <div className="relative p-4 bg-white/70 backdrop-blur-md rounded-[2rem] border-2 border-[#D4AF37]/30 shadow-[0_15px_35px_rgba(212,175,55,0.25)] flex flex-col items-center">
+            {/* Corner Accents */}
+            <div className="absolute top-2.5 left-2.5 w-8 h-8 border-t-2 border-l-2 border-[#D4AF37]/50 rounded-tl-2xl"></div>
+            <div className="absolute top-2.5 right-2.5 w-8 h-8 border-t-2 border-r-2 border-[#D4AF37]/50 rounded-tr-2xl"></div>
+            <div className="absolute bottom-2.5 left-2.5 w-8 h-8 border-b-2 border-l-2 border-[#D4AF37]/50 rounded-bl-2xl"></div>
+            <div className="absolute bottom-2.5 right-2.5 w-8 h-8 border-b-2 border-r-2 border-[#D4AF37]/50 rounded-br-2xl"></div>
+
+            <div className="bg-white p-2 rounded-xl shadow-inner border border-gray-100">
+              <img 
+                src="./public/images/QR.png" 
+                alt="Location QR Code" 
+                className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg"
+              />
+            </div>
+            
+            <div className="mt-3 px-2">
+              <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#800000] opacity-70">
+                Venue Location Map
+              </span>
+            </div>
+          </div>
+        </div>
       </motion.div>
 
       {/* Footer Section */}
-      <motion.div variants={fadeUp} className="flex flex-col items-center w-full mt-auto pt-6">
+      <motion.div variants={fadeUp} className="flex flex-col items-center w-full mt-auto pt-4">
         <Divider color={theme.textAccent} />
         {extraMessage && (
           <p className={`text-[10px] sm:text-xs font-semibold tracking-wide ${theme.textSecondary} px-4 mt-1 uppercase`}>
             {extraMessage}
           </p>
         )}
-        <div className="flex gap-2 mt-1.5 text-base">
+        <div className="flex gap-2 mt-1 text-base">
           <span>🌸</span><span>✨</span><span>🌸</span>
         </div>
       </motion.div>
@@ -962,7 +968,7 @@ export const EventPage = ({ data }) => {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 1.05 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className={`w-full h-full relative ${theme.bg} flex flex-col p-8 pb-16 overflow-hidden`}
+      className={`w-full h-full relative ${theme.bg} flex flex-col p-8 pb-10 overflow-hidden`}
     >
       {/* === Decorative Background Image for Haldi / Mehndi / Wedding === */}
       {(type === 'haldi' || type === 'mehndi' || type === 'wedding') && (() => {
