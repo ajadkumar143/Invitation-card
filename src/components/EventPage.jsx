@@ -394,7 +394,7 @@ const MehndiGreenDivider = () => (
 );
 
 const PremiumMehndiContent = ({ data }) => {
-  const { title, subtitle, date, time, address, extraMessage, theme } = data;
+  const { title, subtitle, date, time, address, message, extraMessage, theme } = data;
 
   const fadeUp = {
     hidden: { opacity: 0, y: 20 },
@@ -462,6 +462,17 @@ const PremiumMehndiContent = ({ data }) => {
             <motion.span className="text-3xl" animate={{ rotate: [5, -5, 5] }} transition={{ duration: 3, repeat: Infinity }}>🌿</motion.span>
           </div>
         </motion.div>
+
+        {/* Mehndi Message Card */}
+        {message && (
+          <motion.div variants={fadeUp} className="w-full my-1.5">
+            <div className="bg-white/40 backdrop-blur-md px-4 py-2.5 rounded-xl border border-green-600/15 shadow-md">
+              <p className="text-[11px] sm:text-xs text-green-900 leading-relaxed font-medium">
+                {message}
+              </p>
+            </div>
+          </motion.div>
+        )}
 
         {/* Date, Time, Address Cards */}
         <motion.div variants={fadeUp} className="flex flex-col gap-2 w-full mt-1.5 z-30">
