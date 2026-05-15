@@ -22,8 +22,8 @@ const WeddingPage = () => {
         className="z-10 text-center flex flex-col items-center px-6"
       >
         <div className="mb-4">
-          <p className="text-gold-400 font-serif italic text-lg">The Auspicious</p>
-          <h1 className="font-serif text-5xl md:text-6xl text-gold-500 mb-2 drop-shadow-md">Muhurtham</h1>
+          <p className="text-gold-400 font-serif italic text-lg">शुभ</p>
+          <h1 className="font-serif text-5xl md:text-6xl text-gold-500 mb-2 drop-shadow-md">मुहूर्त</h1>
         </div>
 
         <div className="bg-red-900/40 backdrop-blur-sm p-6 rounded-t-full rounded-b-lg border-2 border-gold-500/30 w-full max-w-[280px] flex flex-col gap-5 mt-4 shadow-[0_0_30px_rgba(217,119,6,0.15)] relative">
@@ -33,9 +33,9 @@ const WeddingPage = () => {
           </div>
 
           <div className="mt-4">
-            <p className="text-gold-200 font-medium text-lg">Sunday, 26th November</p>
-            <p className="text-gold-400/80 text-sm">Baraat: 9:00 AM</p>
-            <p className="text-gold-400/80 text-sm">Pheras: 11:30 AM</p>
+            <p className="text-gold-200 font-medium text-lg">रविवार, 26 नवंबर</p>
+            <p className="text-gold-400/80 text-sm">बारात: सुबह 9:00 बजे</p>
+            <p className="text-gold-400/80 text-sm">फेरे: सुबह 11:30 बजे</p>
           </div>
           
           <div className="flex justify-center items-center gap-2 text-gold-500/50">
@@ -43,12 +43,12 @@ const WeddingPage = () => {
           </div>
           
           <div>
-            <p className="text-gold-200 font-medium">The Grand Mandap</p>
-            <p className="text-gold-400/80 text-sm">Taj Palace, Mumbai</p>
+            <p className="text-gold-200 font-medium">द ग्रैंड मंडप</p>
+            <p className="text-gold-400/80 text-sm">ताज पैलेस, मुंबई</p>
           </div>
 
           <div className="mt-2 py-2 px-4 border border-gold-500/40 rounded-full inline-block">
-            <p className="text-xs text-gold-300 font-semibold uppercase tracking-widest">Dress Code: Traditional</p>
+            <p className="text-xs text-gold-300 font-semibold uppercase tracking-widest">ड्रेस कोड: पारंपरिक</p>
           </div>
         </div>
       </motion.div>

@@ -229,7 +229,7 @@ const PremiumInvitationContent = ({ data }) => {
 
         <div className="flex items-center justify-center gap-3 my-0.5">
           <div className="h-px w-14 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
-          <span className="font-serif italic text-base text-[#D4AF37] drop-shadow-sm">weds</span>
+          <span className="font-serif italic text-base text-[#D4AF37] drop-shadow-sm">संग</span>
           <div className="h-px w-14 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
         </div>
 
@@ -484,7 +484,7 @@ const PremiumMehndiContent = ({ data }) => {
         {/* Dress Code Badge */}
         <motion.div variants={fadeUp} className="mt-2">
           <div className="py-1.5 px-5 bg-green-100/50 rounded-full border border-green-500/30 shadow-sm backdrop-blur-sm">
-            <p className="text-[10px] text-green-800 font-semibold uppercase tracking-wider">Dress Code: Shades of Green</p>
+            <p className="text-[10px] text-green-800 font-semibold uppercase tracking-wider">ड्रेस कोड: हरे रंग के परिधान</p>
           </div>
         </motion.div>
 
@@ -636,7 +636,7 @@ const PremiumWeddingContent = ({ data }) => {
 
         <div className="flex items-center justify-center gap-3 my-1">
           <div className="h-px w-12 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent" />
-          <span className="font-serif italic text-lg text-[#F0E68C] drop-shadow-sm">weds</span>
+          <span className="font-serif italic text-lg text-[#F0E68C] drop-shadow-sm">संग</span>
           <div className="h-px w-12 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent" />
         </div>
 
@@ -903,10 +903,10 @@ const PremiumThankYouContent = ({ data }) => {
           className="mb-4 px-5 py-3 bg-white/40 backdrop-blur-md rounded-xl border border-[#D4AF37]/20 shadow-md max-w-[280px] text-center"
         >
           <h3 className="text-[#800000] uppercase tracking-[0.2em] text-[11px] font-extrabold mb-1">
-            Scan for Venue Location
+            विवाह स्थल की लोकेशन
           </h3>
           <p className={`text-[11px] font-semibold leading-tight ${theme.textPrimary} opacity-90`}>
-            Scan the QR code below to view the exact venue address and location.
+            विवाह स्थल की सटीक लोकेशन देखने के लिए इस QR कोड को स्कैन करें।
           </p>
         </motion.div>
 
@@ -932,7 +932,7 @@ const PremiumThankYouContent = ({ data }) => {
             
             <div className="mt-3 px-2">
               <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#800000] opacity-70">
-                Venue Location Map
+                विवाह स्थल मानचित्र
               </span>
             </div>
           </div>
@@ -1100,7 +1100,7 @@ export const EventPage = ({ data }) => {
                 <h2 className={`font-serif text-3xl font-extrabold ${theme.textPrimary} drop-shadow-lg`}>{bride}</h2>
                 <div className="flex items-center justify-center gap-3 my-2">
                   <div className={`h-px flex-1 bg-gradient-to-r from-transparent via-current to-transparent ${theme.textAccent}`}></div>
-                  <span className={`font-serif italic text-xl ${theme.textSecondary}`}>weds</span>
+                  <span className={`font-serif italic text-xl ${theme.textSecondary}`}>संग</span>
                   <div className={`h-px flex-1 bg-gradient-to-r from-transparent via-current to-transparent ${theme.textAccent}`}></div>
                 </div>
                 <h2 className={`font-serif text-3xl font-extrabold ${theme.textPrimary} drop-shadow-lg`}>{groom}</h2>

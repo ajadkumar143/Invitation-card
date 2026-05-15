@@ -23,20 +23,20 @@ const ReceptionPage = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="z-10 text-center flex flex-col items-center px-6 w-full"
       >
-        <span className="text-blue-300 uppercase tracking-[0.3em] text-xs font-bold mb-3">Grand Finale</span>
-        <h1 className="font-serif text-5xl md:text-6xl text-slate-100 mb-8 drop-shadow-lg">Reception</h1>
+        <span className="text-blue-300 uppercase tracking-[0.3em] text-xs font-bold mb-3">ग्रैंड फिनाले</span>
+        <h1 className="font-serif text-5xl md:text-6xl text-slate-100 mb-8 drop-shadow-lg">रिसेप्शन</h1>
 
         <div className="bg-slate-800/60 backdrop-blur-md p-8 rounded-2xl shadow-2xl border border-blue-400/20 w-full max-w-[300px] flex flex-col gap-5">
           <div>
-            <p className="text-slate-200 font-medium text-lg">Sunday, 26th November</p>
-            <p className="text-blue-200/70 text-sm">7:30 PM Onwards</p>
+            <p className="text-slate-200 font-medium text-lg">रविवार, 26 नवंबर</p>
+            <p className="text-blue-200/70 text-sm">शाम 7:30 बजे से</p>
           </div>
           
           <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
           
           <div>
-            <p className="text-slate-200 font-medium">Starlight Lawn</p>
-            <p className="text-blue-200/70 text-sm">Taj Palace, Mumbai</p>
+            <p className="text-slate-200 font-medium">स्टारलाइट लॉन</p>
+            <p className="text-blue-200/70 text-sm">ताज पैलेस, मुंबई</p>
           </div>
 
           <motion.button 
@@ -44,7 +44,7 @@ const ReceptionPage = () => {
             whileTap={{ scale: 0.95 }}
             className="mt-6 py-3 px-8 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-semibold shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all"
           >
-            RSVP NOW
+            अभी RSVP करें
           </motion.button>
         </div>
       </motion.div>

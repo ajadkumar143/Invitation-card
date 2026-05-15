@@ -21,24 +21,24 @@ const SangeetPage = () => {
         transition={{ duration: 0.8 }}
         className="z-10 text-center flex flex-col items-center px-6 mb-16"
       >
-        <h1 className="font-serif text-5xl text-purple-100 mb-2 drop-shadow-[0_0_15px_rgba(216,180,254,0.5)]">Sangeet</h1>
-        <span className="text-purple-300 italic font-serif text-lg mb-8">An evening of music & dance</span>
+        <h1 className="font-serif text-5xl text-purple-100 mb-2 drop-shadow-[0_0_15px_rgba(216,180,254,0.5)]">संगीत</h1>
+        <span className="text-purple-300 italic font-serif text-lg mb-8">संगीत और नृत्य की एक शाम</span>
 
         <div className="bg-purple-950/40 backdrop-blur-xl p-6 rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] border border-purple-500/30 w-full max-w-[300px] flex flex-col gap-4">
           <div>
-            <p className="text-purple-100 font-medium">Saturday, 25th November</p>
-            <p className="text-purple-300 text-sm">7:00 PM Onwards</p>
+            <p className="text-purple-100 font-medium">शनिवार, 25 नवंबर</p>
+            <p className="text-purple-300 text-sm">शाम 7:00 बजे से</p>
           </div>
           
           <div className="w-full h-px bg-purple-500/30"></div>
           
           <div>
-            <p className="text-purple-100 font-medium">Crystal Ballroom</p>
-            <p className="text-purple-300 text-sm">Grand Taj, Mumbai</p>
+            <p className="text-purple-100 font-medium">क्रिस्टल बॉलरूम</p>
+            <p className="text-purple-300 text-sm">ग्रैंड ताज, मुंबई</p>
           </div>
 
           <div className="mt-2 py-2 px-4 bg-purple-800/50 rounded-full border border-purple-400/50 inline-block">
-            <p className="text-xs text-purple-200 font-semibold uppercase tracking-wider">Dress Code: Indo-Western</p>
+            <p className="text-xs text-purple-200 font-semibold uppercase tracking-wider">ड्रेस कोड: इंडो-वेस्टर्न</p>
           </div>
         </div>
       </motion.div>

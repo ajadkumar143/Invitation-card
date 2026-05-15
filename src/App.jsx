@@ -282,7 +282,7 @@ const PageNavigation = ({ onPrev, onNext }) => (
     </button>
 
     <div className="pointer-events-auto px-6 py-2 rounded-full bg-black/30 backdrop-blur-md border border-white/40 text-white/90 text-xs tracking-[0.25em] font-bold uppercase shadow-[0_0_20px_rgba(255,255,255,0.4)]">
-      Auto
+      ऑटो
     </div>
 
     <button
